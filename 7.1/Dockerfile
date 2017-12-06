@@ -1,4 +1,4 @@
-FROM php:7.1-fpm-stretch
+FROM php:7.1-fpm-jessie
 
 MAINTAINER Kevin DE SOUSA <contact@kevindesousa.me>
 
