@@ -29,4 +29,8 @@ RUN echo "xdebug.remote_connect_back=1" >> /usr/local/etc/php/conf.d/docker-php-
 RUN echo "xdebug.idekey=\"PHPSTORM\"" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 RUN echo "xdebug.remote_port=9001" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
+# install npm
+RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+
+
 WORKDIR /app
