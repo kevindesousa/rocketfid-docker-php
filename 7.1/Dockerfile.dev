@@ -31,6 +31,8 @@ RUN echo "xdebug.remote_port=9001" >> /usr/local/etc/php/conf.d/docker-php-ext-x
 
 # install npm
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+RUN npm install -g grunt
+RUN npm install -g gulp
 
 
 WORKDIR /app
