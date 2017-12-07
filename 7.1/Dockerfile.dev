@@ -30,7 +30,8 @@ RUN echo "xdebug.idekey=\"PHPSTORM\"" >> /usr/local/etc/php/conf.d/docker-php-ex
 RUN echo "xdebug.remote_port=9001" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # install npm
-RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
+RUN apt-get install -y nodejs
 RUN npm install -g grunt
 RUN npm install -g gulp
 
